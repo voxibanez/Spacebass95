@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D0201263-9237-9BCD-974B-1DBAB2CDDA39}</ProjectGuid>
+    <ProjectGuid>{001CC8F1-C3B4-7DE9-8F86-D136E93AF954}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,14 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Beat Generator.cs" />
+     <Compile Include="Assets\BeatTick.cs" />
      <Compile Include="Assets\EnemySpawner.cs" />
      <Compile Include="Assets\EnemyStats.cs" />
      <Compile Include="Assets\FollowObject.cs" />
      <Compile Include="Assets\FollowPlayer.cs" />
+     <Compile Include="Assets\MakeBackground.cs" />
      <Compile Include="Assets\PlayerMove.cs" />
      <Compile Include="Assets\PlayerProximity.cs" />
      <Compile Include="Assets\Title\Rythm.cs" />
      <Compile Include="Assets\Title\RythmText.cs" />
+     <Compile Include="Assets\tickScriptBg.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
