@@ -26,7 +26,7 @@ public class tickScriptBg : MonoBehaviour {
 		count++;
 	}
 	public void tick(){
-		targetScale = new Vector3 (15, 15, 1);
+		targetScale = new Vector3 (22, 22, 1);
 		isTick = true;
 		count = 0;
 	}

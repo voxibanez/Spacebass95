@@ -9,6 +9,7 @@ public class EnemyStats : MonoBehaviour {
 	public float size;
 	public float speed;
 	private bool statsSet;
+    public int uid;
 
 	// Use this for initialization
 	void Start () {

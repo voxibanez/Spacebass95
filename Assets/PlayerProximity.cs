@@ -24,7 +24,11 @@ public class PlayerProximity : MonoBehaviour
             {
 
                 if (Mathf.Abs((enObj.transform.position.x - playerObject.transform.position.x)) < proximity && Mathf.Abs((enObj.transform.position.y - playerObject.transform.position.y)) < proximity)
+                {
+                    enObj.GetComponent<FollowObject>().followObject = playerObject;
                     enObj.GetComponent<FollowObject>().enabled = true;
+                }
+                    
 
             }
         }

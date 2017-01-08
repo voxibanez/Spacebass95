@@ -73,7 +73,7 @@ public class MakeBackground : MonoBehaviour {
 			county = 0;
 			countx++;
 			for (int j = Mathf.RoundToInt (bottomLeft.y) + bgSpacing; j < Mathf.RoundToInt (topRight.y) ; j += bgSpacing) {
-				GameObject temp = (GameObject)Instantiate (bgObject, new Vector3 (i, j, 10), Quaternion.identity);
+				GameObject temp = (GameObject)Instantiate (bgObject, new Vector3 (i, j, 2), Quaternion.identity);
 				temp.GetComponent<tickScriptBg> ().offset = countx + county;
 				temp.GetComponent<tickScriptBg> ().enabled = true;
 				county++;

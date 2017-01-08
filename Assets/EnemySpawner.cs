@@ -50,6 +50,7 @@ public class EnemySpawner : MonoBehaviour {
 				return;
 			}
 			runs++;
+            
 			foreach (GameObject enObj in enemyList){
 
 				BoxCollider2D tempC = enObj.GetComponent<BoxCollider2D> ();
@@ -105,7 +106,9 @@ public class EnemySpawner : MonoBehaviour {
 		int speed = Mathf.RoundToInt(size * 10);
 
 		tempObj.GetComponent<EnemyStats> ().setStats (hp, atk, def, size, speed);
-			enemyList.Add(tempObj);
+        tempObj.GetComponent<EnemyStats>().uid = enemyList.Count;
+
+            enemyList.Add(tempObj);
 	}
 
 
